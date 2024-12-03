@@ -14,7 +14,7 @@ private val retrofit =
 
 interface MarsApiService {
     @GET("photos")
-    fun getPhotos(): String
+    suspend fun getPhotos(): String
 }
 
 //
